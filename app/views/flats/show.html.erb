@@ -10,5 +10,6 @@
 
 <ul>
   <li><%= link_to 'Edit this Flat', edit_flat_path(@flat) %></li>
+  <li><%= link_to 'Delete this Flat', flat_path(@flat), data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %></li>
   <li><%= link_to 'Back to Index', flats_path %></li>
 </ul>
