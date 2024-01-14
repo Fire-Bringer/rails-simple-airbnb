@@ -8,4 +8,7 @@
   <li><%= @flat.number_of_guests %></li>
 </ul>
 
-<%= link_to 'Back to Index', flats_path %>
+<ul>
+  <li><%= link_to 'Edit this Flat', edit_flat_path(@flat) %></li>
+  <li><%= link_to 'Back to Index', flats_path %></li>
+</ul>
